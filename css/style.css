@@ -33,10 +33,10 @@ Spacing System
 /* 02.base Start ------------------------------ */
 
 :root {
-  --primary: ;
-  --secondary: ;
-  --font-family1: ;
-  --font-family2: ;
+  --primary: #2795E3;
+  --secondary: #2795E3;
+  --font-family1: "Inter", sans-serif;
+  --font-family2: "Inter", sans-serif;
 }
 
 /* html {
@@ -49,10 +49,10 @@ body {
 }
 
 .font-h {
-  font-family: "", sans-serif;
+  font-family: var(--font-family1);
 }
 .font-t {
-  font-family: "", sans-serif;
+  font-family: var(--font-family2);
 }
 
 .text-primary {
@@ -86,8 +86,15 @@ h6 {
   line-height: 1.2;
 }
 
+h2 {
+  font-family: var(--font-family1);
+  font-size: clamp(24px, 5vw ,50px);
+  font-weight: 900;
+}
+
 p {
-  font-size: 1.8rem;
+  font-family: var(--font-family2);
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -118,13 +125,11 @@ p {
   max-width: 1600px;
   margin: auto;
 }
+.section-padding {
+  padding: 64px 32px;
+}
 
 /* ------------- base End ------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 header {
   display: flex;
@@ -183,7 +188,7 @@ nav a.active::after {
 
 @media (max-width: 992px) {
   nav {
-    /* display: none; */
+    display: none;
     flex-direction: column;
     background: #050b2c;
     position: absolute;
@@ -192,7 +197,9 @@ nav a.active::after {
     width: 100%;
     text-align: center;
   }
-
+  #navbar {
+    padding: 20px;
+  }
   nav.show {
     display: flex;
   }
@@ -204,5 +211,40 @@ nav a.active::after {
 
 /* 04.About Journey  Section Start ------------------------------ */
 
-/* ------------- About Journey  Section End ------------- */
+.about-journey h2 {
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
 
+.about-journey p {
+  margin-bottom: 16px;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  border-radius: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.journey-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img-block {
+  background-color: #ddd;
+  border-radius: 12px;
+  aspect-ratio: 1 / 1;
+}
+
+/* ------------- About Journey  Section End ------------- */
