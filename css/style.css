@@ -242,9 +242,11 @@ nav a.active::after {
 }
 
 .img-block {
-  background-color: #ddd;
-  border-radius: 12px;
   aspect-ratio: 1 / 1;
+}
+
+.img-block img{
+  width: 100%;
 }
 
 /* ------------- About Journey  Section End ------------- */
