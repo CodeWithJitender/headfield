@@ -96,6 +96,7 @@ h2 {
   font-family: var(--font-family1);
   font-size: clamp(24px, 5vw, 50px);
   font-weight: 900;
+  color: #007BAF;
 }
 h5 {
   font-family: var(--font-family1);
@@ -317,6 +318,12 @@ height: 100%;
 /* ------------- Hero Section End ------------- */
 /* 04.About Journey  Section Start ------------------------------ */
 
+.about-journey {
+  background-image: url('../img/brief-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .about-journey h2 {
   margin-bottom: 24px;
   line-height: 1.2;
@@ -369,21 +376,26 @@ height: 100%;
 /* 04.CEO Section Start ------------------------------ */
 .ceo-section {
   padding: 64px 32px;
+  background: linear-gradient(261.63deg, #97D4FF 0.17%, #007BAF 99.83%);
+
 }
 
 .ceo-role {
-  color: #333;
+  color: white;
   margin-bottom: 12px;
 }
 
 .ceo-name {
+  color: white;
+
   font-weight: 900;
   margin-bottom: 24px;
 }
 
 .ceo-bio {
+  color: white;
+
   line-height: 1.6;
-  color: #222;
 }
 
 .ceo-img {
@@ -413,6 +425,10 @@ height: 100%;
 /* 04.Leading Section Start ------------------------------ */
 .impact-section {
   padding: 60px 20px;
+  background-image: url('../img/leading-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .impact-section .card {
@@ -426,8 +442,8 @@ height: 100%;
 }
 
 .card-img-top {
-  height: 240px;
-  object-fit: cover;
+  /* height: 240px;
+  object-fit: cover; */
 }
 
 @media (max-width: 767px) {
@@ -442,6 +458,12 @@ height: 100%;
 /* ------------- Leading Section End ------------- */
 
 /* 04.Ventures  Section Start ------------------------------ */
+.ventures-section{
+    background-image: url('../img/ventures-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .ventures-section .venture-card {
   background-size: cover;
   background-position: center;
@@ -498,7 +520,8 @@ height: 100%;
 
 /* 04.Footer  Section Start ------------------------------ */
 .footer {
-  background-color: #fff;
+background: linear-gradient(180deg, #E4F7FF 0%, #86DAFE 100%);
+
   text-align: center;
   padding: 40px 20px;
   font-family: "Arial", sans-serif;
